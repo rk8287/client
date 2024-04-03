@@ -17,7 +17,7 @@ const Testnomial = () => {
     <div className='sub'>
     <div className="testnomial-header">
       <div className="headin">
-        <h1 className='h-k'>81K+ of happy trips with WowFare</h1>
+        <h1 className='h-k'>Happy Customers with Planet fares</h1>
       </div>
       <div className="others">
            <div style={{display:'flex',marginTop:'12px'}} className="star">
