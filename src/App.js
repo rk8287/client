@@ -19,7 +19,7 @@ const App = () => {
   const [timeLeft, setTimeLeft] = useState(30);
   const [answerStatus, setAnswerStatus] = useState({}); 
   const [answeredQuestions, setAnsweredQuestions] = useState(new Set());
-  const API_URL = 'https://your-live-api.com/api/Uw5CrX'; // Use your actual live API URL
+ const API_URL = "https://your-api-domain.com/api/Uw5CrX";
 
 
   useEffect(() => {
