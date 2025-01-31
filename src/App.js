@@ -19,7 +19,8 @@ const App = () => {
   const [timeLeft, setTimeLeft] = useState(30);
   const [answerStatus, setAnswerStatus] = useState({}); 
   const [answeredQuestions, setAnsweredQuestions] = useState(new Set());
-  const API_URL = '/api/Uw5CrX';
+  const API_URL = 'https://your-live-api.com/api/Uw5CrX'; // Use your actual live API URL
+
 
   useEffect(() => {
     axios.get(API_URL)
