@@ -24,17 +24,24 @@ const API_URL = "https://api.jsonserve.com/Uw5CrX";
 
 
   useEffect(() => {
-    axios.get(API_URL)
-      .then(response => {
-        setQuizData(response.data);
-        console.log(response.data);
-        setLoading(false);
-      })
-      .catch(error => {
-        console.error('Error fetching quiz data:', error);
-        setLoading(false);
-      });
-  }, []);
+  fetch(API_URL, {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    mode: "cors" // This sometimes helps
+  })
+    .then(response => response.json())
+    .then(data => {
+      setQuizData(data);
+      setLoading(false);
+    })
+    .catch(error => {
+      console.error("Error fetching quiz data:", error);
+      setLoading(false);
+    });
+}, []);
+
 
   useEffect(() => {
     let timer;
