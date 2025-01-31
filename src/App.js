@@ -19,7 +19,7 @@ const App = () => {
   const [timeLeft, setTimeLeft] = useState(30);
   const [answerStatus, setAnswerStatus] = useState({}); 
   const [answeredQuestions, setAnsweredQuestions] = useState(new Set());
- const API_URL = "https://your-api-domain.com/api/Uw5CrX";
+ const API_URL = "https://client-ndyi.vercel.app/api/Uw5CrX";
 
 
   useEffect(() => {
